@@ -1,0 +1,39 @@
+<template>
+  <div>
+    <!-- Header -->
+    <AppHeader />
+
+    <!-- Terms of Service Content -->
+    <section class="content-section">
+      <h1>Terms of Service</h1>
+      <p>
+        This is where you outline the terms and conditions for using your site.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>© 2023 smashit.games</div>
+      <div>
+        <router-link to="/terms-of-service">Terms of Use</router-link> |
+        <router-link to="/privacy-policy">Privacy Policy</router-link> |
+        <router-link to="/cookie-statement">Cookie Statement</router-link>
+      </div>
+    </footer>
+  </div>
+</template>
+
+<script>
+import AppHeader from "@/components/AppHeader.vue";
+
+export default {
+  name: "TermsOfService",
+  components: {
+    AppHeader
+  }
+}
+</script>
+
+<style scoped>
+/* You can add any specific styles for this page here */
+</style>
