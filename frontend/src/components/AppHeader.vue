@@ -1,6 +1,6 @@
 <template>
-  <v-app-bar app>
-    <v-img :src="logo" alt="smashit.games Logo" height="40"></v-img>
+  <v-app-bar app class="px-sm-11">
+    <v-img :src="logo" alt="smashit.games Logo" height="50"></v-img>
 
     <v-spacer></v-spacer>
 
