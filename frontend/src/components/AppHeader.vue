@@ -4,10 +4,22 @@
 
     <v-spacer></v-spacer>
 
-    <v-btn text :to="'/'">Hellfire Hands</v-btn>
-    <v-btn text :to="'/about-us'">About Us</v-btn>
-    <v-btn text href="https://smash-it-games.notion.site/Job-Board-cb3cf317f59a4ba0bce1921b6e97c153">Jobs</v-btn>
-    <v-btn text href="https://discord.gg/84zvK3y3Cs">Discord</v-btn>
+    <v-btn text :to="'/'">
+      <v-icon left>mdi-fire</v-icon>
+      Hellfire Hands
+    </v-btn>
+    <v-btn text :to="'/about-us'">
+      <v-icon left>mdi-information</v-icon>
+      About Us
+    </v-btn>
+    <v-btn text href="https://smash-it-games.notion.site/Job-Board-cb3cf317f59a4ba0bce1921b6e97c153" target="_blank" rel="noopener noreferrer">
+      <v-icon left>mdi-briefcase</v-icon>
+      Jobs
+    </v-btn>
+    <v-btn text href="https://discord.gg/84zvK3y3Cs" target="_blank" rel="noopener noreferrer">
+      <v-icon left>mdi-discord</v-icon>
+      Discord
+    </v-btn>
 
     <!-- Theme Toggle Button -->
     <v-btn icon @click="toggleDarkMode">

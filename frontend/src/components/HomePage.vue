@@ -54,21 +54,21 @@ export default {
           id: 1,
           title: "Face the Puppeteers of Darkness",
           description: "Challenging, fierce, and unpredictable - confront the formidable guardians of Nocturnum's dominion. Each boss battle tests your mettle, demanding strategy, agility, and the will to survive.",
-          image: require('@/assets/powerorbsscaled.jpg'),
+          image: require('@/assets/boss.jpg'),
           alt: "Boss Battle"
         },
         {
           id: 2,
           title: "The Cycle of Rebirth",
           description: "Death is not the end, but a new beginning. With each demise, return to your camp, harness the lessons learned, and prepare for the next descent into the abyss. Spend your hard-earned gold for redemption and strength, ensuring you're better equipped for the battles ahead.",
-          image: require('@/assets/powerorbsscaled.jpg'),
+          image: require('@/assets/campsite.jpg'),
           alt: "Campsite"
         },
         {
           id: 3,
           title: "Discover the Land of Inferna",
           description: "A realm of mystery, danger, and ancient legends. Journey through the diverse landscapes of Inferna, from the darkest abyss to the remnants of a world once filled with harmony. Unravel its secrets, and restore the balance.",
-          image: require('@/assets/powerorbsscaled.jpg'),
+          image: require('@/assets/arena.jpg'),
           alt: "Inferna Landscape"
         }
       ]
