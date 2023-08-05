@@ -1,31 +1,40 @@
-// Styles
-import '@mdi/font/css/materialdesignicons.css'
+import '@mdi/font/css/materialdesignicons.min.css'
 import 'vuetify/styles'
-
-// Vuetify
 import { createVuetify } from 'vuetify'
 
-const vuetifyInstance = createVuetify({
+const vuetify = createVuetify({
     theme: {
-        defaultTheme: 'dark', // Set dark mode by default
+        defaultTheme: 'dark',
         themes: {
             light: {
-                primary: '#1976D2', // blue
-                secondary: '#424242', // grey darken-3
-                accent: '#82B1FF', // blue accent-1
-                error: '#FF5252', // red accent-2
-                info: '#2196F3', // blue
-                success: '#4CAF50', // green
-                warning: '#FFC107' // amber
+                dark: false,
+                colors: {
+                    background: '#FFFFFF',
+                    surface: '#FFFFFF',
+                    primary: '#6200EE',
+                    'primary-darken-1': '#3700B3',
+                    secondary: '#03DAC6',
+                    'secondary-darken-1': '#018786',
+                    error: '#B00020',
+                    info: '#2196F3',
+                    success: '#4CAF50',
+                    warning: '#FB8C00'
+                }
             },
             dark: {
-                primary: '#2196F3', // blue
-                secondary: '#424242', // grey darken-3
-                accent: '#FF4081', // pink accent-2
-                error: '#FF5252', // red accent-2
-                info: '#2196F3', // blue
-                success: '#4CAF50', // green
-                warning: '#FFC107' // amber
+                dark: true,
+                colors: {
+                    background: '#121212',
+                    surface: '#121212',
+                    primary: '#BB86FC',
+                    'primary-darken-1': '#3700B3',
+                    secondary: '#03DAC6',
+                    'secondary-darken-1': '#018786',
+                    error: '#CF6679',
+                    info: '#2196F3',
+                    success: '#4CAF50',
+                    warning: '#FB8C00'
+                }
             }
         }
     },
@@ -34,8 +43,4 @@ const vuetifyInstance = createVuetify({
     }
 });
 
-vuetifyInstance.toggleTheme = function() {
-    this.theme.current = this.theme.current === 'dark' ? 'light' : 'dark';
-}
-
-export default vuetifyInstance;
+export default vuetify;

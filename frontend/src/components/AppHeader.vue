@@ -19,26 +19,36 @@
 </template>
 
 <script>
+import { useTheme } from 'vuetify'
+
 export default {
   data() {
     return {
       logo: require('@/assets/smashitlogo-cropped.png')
-    }
+    };
   },
   computed: {
-    // Determine which icon to display based on the theme state
     themeIcon() {
-      return this.$vuetify.theme.current === 'dark' ? 'mdi-moon-waxing-crescent' : 'mdi-white-balance-sunny';
+      return this.theme.global.current.value.dark ? 'mdi-moon-waxing-crescent' : 'mdi-white-balance-sunny';
     }
+  },
+  setup() {
+    const theme = useTheme();
+
+    function toggleDarkMode() {
+      theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark';
+    }
+
+    return {
+      theme,
+      toggleDarkMode
+    };
   },
   methods: {
     scrollTo(target) {
       this.$scrollTo(target, 500);
     },
-    toggleDarkMode() {
-      // Use the toggleTheme method
-      this.$vuetify.toggleTheme();
-    }
+    // ... potentially other methods ...
   }
 }
 </script>
