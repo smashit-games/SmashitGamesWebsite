@@ -1,6 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  publicPath: '/SmashitGamesWebsite/',
+  publicPath: process.env.NODE_ENV === 'production'
+   ? '/SmashitGamesWebsite/'
+   : '/',
   transpileDependencies: true,
 
   pluginOptions: {
