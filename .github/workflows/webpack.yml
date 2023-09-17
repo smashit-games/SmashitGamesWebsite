@@ -26,12 +26,11 @@ jobs:
       run: |
         cd frontend
         npm install
-        npm install -D webpack-cli
 
-    - name: Build
+    - name: Build using Vue CLI
       run: |
         cd frontend
-        npx webpack
+        npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3.9.3
