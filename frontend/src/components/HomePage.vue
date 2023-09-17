@@ -154,32 +154,4 @@ export default {
   .v-theme--light footer {
     color: black;
   }
-
-  @media (max-width: 768px) {
-    .hero-section h1 {
-      font-size: 2.5rem; /* Reduced font size for mobile */
-    }
-
-    .hero-section p,
-    .text-section p {
-      font-size: 1rem; /* Reduced font size for mobile */
-    }
-
-    .text-section h2 {
-      font-size: 1.5rem; /* Reduced font size for mobile */
-    }
-
-    .alternating-section .content-wrapper {
-      flex-direction: column; /* Stack image and text on top of each other for mobile */
-      gap: 1rem;
-    }
-
-    .image-section img {
-      max-width: 100%; /* Ensure image doesn't exceed screen width */
-    }
-
-    footer {
-      font-size: 0.9rem; /* Reduced font size for footer on mobile */
-    }
-  }
 </style>
